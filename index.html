@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap CSS v5.0.2 -->
@@ -12,12 +13,39 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Main</a>
-            <button></button>
+    <!-- navbar -->
+    <nav class="navbar navbar-dark navbar-expand-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">Country</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Search</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Random</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2 bg-dark text-light" type="text" placeholder="Search">
+                  <button class="btn btn-outline-success" type="button">Search</button>
+                </form>
+              </div>
         </div>
     </nav>
+
+    <!-- main -->
+    <main class="container mt-5">
+        <div class="row" id="content">
+
+        </div>
+    </main>
 
     <script src="script.js"></script>
 </body>

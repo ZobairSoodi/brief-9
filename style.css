@@ -1,0 +1,29 @@
+body{
+    background-color: #2e3e47 !important;
+}
+nav{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    background-color: #1d1d1d !important;
+}
+ main{
+    background-color: #303030 !important;
+    border-radius: 10px;
+    min-height: 600px;
+}
+#content{
+    min-height: 600px;
+}
+#content div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(230, 230, 230);
+}
+#content div img{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 50%;
+    max-height: 50%;
+}
