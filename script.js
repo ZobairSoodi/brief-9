@@ -25,8 +25,8 @@ function printCountries(){
                 image = "sIaRmaFSMfrw8QJIBAa8mA-article.png"
             }
             var name_c = data[i]["name"]["common"];
-            if(name_c.length>10){
-                name_c = name_c.substring(0,10);
+            if(name_c.length>16){
+                name_c = name_c.substring(0,15);
                 name_c+="...";
             }
             
@@ -39,7 +39,7 @@ function printCountries(){
             var population = data[i]["population"]
             var div = document.createElement("div");
             div.setAttribute("class", "col-xs-12 col-sm-6 col-md-4 col-lg-3 thumbnail");
-            div.innerHTML = `<img src="${image}"><h3>${name_c} <span class="h5 text-muted">(${population})</span></h3><h5 class="text-light">${capital}</h5>`;
+            div.innerHTML = `<h3>${name_c}</h3><img src="${image}"><h5 class="h5 text-success">Population: ${population}</h5><h5 class="text-light">Capital: ${capital}</h5>`;
             main.append(div);
         }
     })
