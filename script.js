@@ -55,6 +55,5 @@ $(".dropdown-menu a").click(function(){
         case "America": continent="America";break;
         case "Europe": continent="Europe";break;
     }
-    
     printCountries();
 })
